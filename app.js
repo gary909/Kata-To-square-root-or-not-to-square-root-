@@ -1,7 +1,8 @@
 function squareOrSquareRoot(array) {
     // let myArr = [];
     // for (var i = 0; i < array.length; i++) {
-    //     if (array[i] % 1 != 0) {
+    //     let hasDec = Math.pow(array[i], 2);
+    //     if (hasDec % 2 !== 0) {
     //         hasDecimal = Math.pow(array[i], 2)
     //         myArr.push(hasDecimal)
     //     } else {
@@ -10,9 +11,10 @@ function squareOrSquareRoot(array) {
     //     }
     // }
     // return myArr;
-    // let squaredNumber = Math.pow(array[1], 2);
-    // return squaredNumber;
-    return 1 % 1
+    let hasDec = Math.pow(array[1], 2);
+    // 2 = 4
+    result = hasDec
+    return Math.sqrt(result, 2);
 }
 
 console.log(squareOrSquareRoot([4, 3, 9, 7, 2, 1])); // [ 2, 9, 3, 49, 4, 1 ]
